@@ -1,0 +1,22 @@
+@media (max-width: 480px) {
+    .top_text {
+        display: none;
+    }
+
+
+    .top {
+        display: block;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+    .left-side {
+        width: 100%;
+    }
+}
+

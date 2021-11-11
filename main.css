@@ -4,6 +4,14 @@
     font-family: sans-serif;
 }
 
+.whiter {
+    background: white;
+}
+
+.black {
+    background: black;
+}
+
 .main {
     width: 80%;
     margin: 20px auto;
@@ -20,8 +28,12 @@
 .header {
     display: flex;
     justify-content: space-between;
-    height: 60px;
     padding: 20px;
+}
+
+.btn_theme {
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .top {
@@ -47,6 +59,7 @@
 
 .photo {
     display: flex;
+    margin-left: 40px;
 }
 
 .photo img {
@@ -69,6 +82,7 @@
 }
 
 .title-photo {
+    width: 100px;
     display: block;
     position: relative;
     right: 120px;
@@ -135,13 +149,96 @@
     position: relative;
 }
 
-.bar span::before {
+.html span::before {
     position: absolute;
     content: "";
-    width: 80%;
+    width: 90%;
     height: 80%;
     background-color: green;
     top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.react span::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 80%;
+    background-color: green;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.javaScript span::before {
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 80%;
+    background-color: green;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.node span::before {
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 80%;
+    background-color: green;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.typeScript span::before {
+    position: absolute;
+    content: "";
+    width: 10%;
+    height: 80%;
+    background-color: green;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.angular span::before {
+    position: absolute;
+    content: "";
+    width: 10%;
+    height: 80%;
+    background-color: green;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.mySQL span::before {
+    position: absolute;
+    content: "";
+    width: 15%;
+    height: 80%;
+    background-color: green;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+.mongoDB span::before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 80%;
+    background-color: green;
+    top: 40%;
     left: 2%;
     transform: translateY(-50%);
     border-radius: 10px;
@@ -163,6 +260,40 @@
     color: black;
 }
 
+.footer {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.btn_write {
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.container-form {
+    display: none;
+    margin-top: 20px;
+}
+
+.inputField {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+form textarea{
+    height: 100px;
+}
+
+.btn_send {
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
 .about {
     margin: 30px;
     padding: 50px;
@@ -170,10 +301,22 @@
     box-shadow: 2px 2px 20px rgba(0, 0, 0, .5);
     border-radius: 20px;
 }
-.about h2 {
+.about h3 {
     padding-bottom: 10px;
 }
 
 .about p {
     font-size: 14px;
+    margin-bottom: 10px;
 }
+
+.right-side h3 span {
+    margin-right: 20px;
+    font-weight: normal;
+    color: #a9a6a6;
+    font-size: 30px;
+}
+
+.
+
+
