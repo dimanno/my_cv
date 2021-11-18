@@ -1,14 +1,10 @@
-const theme = document.getElementsByClassName('white')[0];
+const theme = document.getElementsByClassName('theme')[0];
 const button = document.getElementsByClassName('btn_theme')[0];
-function changeTheme() {
-    if (theme.style.background === 'white') {
+
+button.addEventListener('click', function () {
         theme.style.background = 'black'
-        button.textContent = 'Light Theme'
-    } else {theme.style.background = 'black'
-        theme.style.background = 'white'
-        button.textContent = 'Dark Theme'
-    }
-}
+        button.innerHTML = 'Light Theme'
+})
 
 const addSkills = (skill, level) =>  {
 
