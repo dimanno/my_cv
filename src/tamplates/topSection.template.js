@@ -2,7 +2,7 @@ function picture(block) {
     return `<div class="photo">
             <img src=${block.image} alt="photo">
             <div class="title-photo">
-                <h3>${block.text}</h3>
+                <h3>${block.position}</h3>
             </div>
         </div>`
 }

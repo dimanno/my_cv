@@ -1,52 +1,16 @@
 import './styles/main.css'
 
-import {topSectionModel} from './models/topSection.model';
-import {contactModel} from './models/contact.model'
-import {skillsModel} from './models/skills.model'
-import {contentModel} from './models/content.model'
-import {topSectionTemp} from './tamplates/topSection.template';
-import {aboutMe, experience, education} from './tamplates/contant.template'
+import {topSectionModel, contactModel, skillsModel, contentModel} from './models';
+import {Cv} from './classes/cv'
 
-const $topSection = document.querySelector('#top');
-const $contact = document.querySelector('#contact');
-const $skills = document.querySelector('#bar');
-const $mainContent = document.querySelector('#mainContent');
+const cv = new Cv('#top', '#contact', '#bar', '#mainContent');
+cv.render(topSectionModel, contactModel, skillsModel, contentModel);
 
-topSectionModel.forEach(block => {
-    const toHTML = topSectionTemp[block.type];
-    if (toHTML) {
-        $topSection.insertAdjacentHTML('beforeend', toHTML(block));
-    }
-});
 
-contactModel.map(block => {
-    const html = `<h4>${block.title}</h4><p>${block.value}</p>`
-    $contact.insertAdjacentHTML('beforeend', html);
-});
 
-skillsModel.map(block => {
-    const styles = block.style;
-    const html = `
-        <div class="bar ${block.type}">
-             <p>${block.type}</p>
-             <span></span>
-        </div>`
 
-    $skills.insertAdjacentHTML('beforeend', html)
-});
 
-contentModel.forEach(block => {
-    let html = ''
-    if (block.type === 'aboutMe') {
-        html = aboutMe(block);
-    } else if (block.type === 'experience') {
-        html = experience(block);
-    } else if (block.type === 'education') {
-        html = education(block);
-    }
 
-    $mainContent.insertAdjacentHTML('beforeend', html)
-})
 
 //////////////////////////////////////////////////////////////////////
 const theme = document.getElementsByClassName('white')[0];

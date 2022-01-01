@@ -4,7 +4,7 @@ export const topSectionModel = [
     {
         type: 'picture',
         image: picture,
-        text: 'JS Developer'
+        position: 'JS Developer'
     },
     {
         type: 'fullName',
