@@ -1,4 +1,4 @@
-import picture from '../assets/image.jpg'
+import picture from '../assets/picture.jpg'
 
 export const topSectionModel = [
     {
