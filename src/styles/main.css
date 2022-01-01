@@ -149,10 +149,10 @@
     position: relative;
 }
 
-.html span::before {
+.HTML5_CSS span::before {
     position: absolute;
     content: "";
-    width: 90%;
+    width: 80%;
     height: 80%;
     background-color: green;
     top: 50%;
@@ -161,7 +161,7 @@
     border-radius: 10px;
 }
 
-.react span::before {
+.React span::before {
     position: absolute;
     content: "";
     width: 50%;
@@ -173,7 +173,7 @@
     border-radius: 10px;
 }
 
-.javaScript span::before {
+.JavaScript span::before {
     position: absolute;
     content: "";
     width: 70%;
@@ -185,7 +185,7 @@
     border-radius: 10px;
 }
 
-.node span::before {
+.Node_Js span::before {
     position: absolute;
     content: "";
     width: 30%;
@@ -197,7 +197,7 @@
     border-radius: 10px;
 }
 
-.typeScript span::before {
+.TypeScript span::before {
     position: absolute;
     content: "";
     width: 10%;
@@ -209,7 +209,7 @@
     border-radius: 10px;
 }
 
-.angular span::before {
+.Angular span::before {
     position: absolute;
     content: "";
     width: 10%;
@@ -221,7 +221,7 @@
     border-radius: 10px;
 }
 
-.mySQL span::before {
+.MySQL span::before {
     position: absolute;
     content: "";
     width: 15%;
@@ -232,13 +232,13 @@
     transform: translateY(-50%);
     border-radius: 10px;
 }
-.mongoDB span::before {
+.MongoDB span::before {
     position: absolute;
     content: "";
     width: 40%;
     height: 80%;
     background-color: green;
-    top: 40%;
+    top: 50%;
     left: 2%;
     transform: translateY(-50%);
     border-radius: 10px;

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>CV</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/media.css">
+
+    <script src="https://kit.fontawesome.com/ebf989d4d5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id='app' class="main whiter">
+    <header id='header' class="header">
+        <h4>Summary</h4>
+        <button class="btn_theme"
+                onclick="changeTheme()"
+        >Dark Theme
+        </button>
+    </header>
+
+    <hr>
+    <section id="top" class="top"></section>
+
+    <div id="sideBarContent" class="content">
+        <div id="sidebar" class="left-side">
+            <div id="contact" class="contact">
+                <h2>CONTACT</h2>
+            </div>
+            <div id="skills" class="skills">
+                <h2>SKILLS</h2>
+                <div id="bar" class="bars">
+
+                </div>
+            </div>
+            <div id="follow" class="follow_me">
+                <h2>FOLLOW ME</h2>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/dmytro-petskovych-47ba69123/">
+                        <i class="fab fa-linkedin icon-size"></i>
+                    </a>
+                    <a href="https://www.facebook.com/DmytroPetskovych">
+                        <i class="fab fa-facebook icon-size"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dima_petskovych/">
+                        <i class="fab fa-instagram icon-size"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="footer" class="footer">
+                <button class="btn_write"
+                        onclick="writeMessage()"
+                >Write message
+                </button>
+                <div class="container-form">
+                    <div class="form-wrap">
+                        <form name="message">
+                            <label>
+                                <input type="text"
+                                       name="name"
+                                       class="inputField"
+                                       placeholder="Name"
+                                />
+                            </label>
+                            <label>
+                                <input type="text"
+                                       name="company"
+                                       class="inputField"
+                                       placeholder="Company"
+                                />
+                            </label>
+                            <label>
+                                <input type="email"
+                                       name="email"
+                                       class="inputField"
+                                       placeholder="Email"
+                                />
+                            </label>
+                            <label class="labelField">
+                                            <textarea id="note-text"
+                                                      placeholder="write message"
+                                                      maxlength="100"
+                                                      class="inputField"
+                                            ></textarea>
+                            </label>
+                        </form>
+                        <button class="btn_send"
+                                onclick="sentMessage()"
+                        >Sent
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mainContent" class="right-side"></div>
+        </div>
+    </div>
+</div>
+
+<script src="index.js" type="module"></script>
+</body>
+</html>
