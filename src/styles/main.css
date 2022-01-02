@@ -8,7 +8,7 @@
     background: white;
 }
 
-.black {
+body.dark {
     background: black;
 }
 
@@ -317,6 +317,5 @@ form textarea{
     font-size: 30px;
 }
 
-.
 
 

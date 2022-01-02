@@ -6,34 +6,17 @@ import {Cv} from './classes/cv'
 const cv = new Cv('#top', '#contact', '#bar', '#mainContent');
 cv.render(topSectionModel, contactModel, skillsModel, contentModel);
 
-
-
-
-
-
-
 //////////////////////////////////////////////////////////////////////
-const theme = document.getElementsByClassName('white')[0];
-const button = document.getElementsByClassName('btn_theme')[0];
 
-function changeTheme() {
-    if (theme.style.background === 'white') {
-        theme.style.background = 'black'
+const button = document.getElementsByClassName('btn_theme')[0];
+button.addEventListener('click', () => {
+    // document.body.classList.toggle('dark')
+    if (document.body.classList.toggle('dark')) {
         button.textContent = 'Light Theme'
     } else {
-        theme.style.background = 'black'
-        theme.style.background = 'white'
         button.textContent = 'Dark Theme'
     }
-}
-
-const addSkills = (skill, level) => {
-
-}
-
-const levelSkills = () => {
-
-}
+})
 
 const form = document.getElementsByClassName('container-form')[0];
 document.getElementsByClassName('btn_write')
@@ -44,7 +27,7 @@ function writeMessage() {
     } else {
         form.style.display = 'none'
     }
-    // document.getElementsByClassName('btn_write')[0].remove()
+    document.getElementsByClassName('btn_write')[0].remove()
 
 }
 
